@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/padding_default"
+    android:layout_marginBottom="@dimen/margin_default"
+    style="@style/Layouts">
+    <RelativeLayout
+        android:id="@+id/ad_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Layouts"
+        android:layout_margin="@dimen/margin_default">
+
+        <TextView
+        android:id="@+id/ad_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/img_frame"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:layout_alignParentTop="true"
+        style="@style/Texts.TextViews"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+        <TextView
+            android:id="@+id/ad_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/img_frame"
+            android:layout_marginEnd="@dimen/m42"
+            android:layout_below="@id/ad_title"
+            style="@style/Texts.textViews"
+            android:padding="@dimen/padding_default"
+            />
+        <TextView
+            android:id="@+id/ad_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/Texts.textViews"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/img_frame"
+            android:layout_marginEnd="@dimen/m42"
+            android:layout_below="@id/ad_price"
+            android:padding="@dimen/padding_default"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/img_frame"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shape_rounde"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/txt_ad_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/ad_active"
+                android:text="@string/published"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/chat_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_chat"
+            android:scaleType="fitCenter"
+            style="@style/ImageButtons"
+            android:layout_toStartOf="@id/img_frame"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_below="@id/ad_price"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

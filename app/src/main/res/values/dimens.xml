@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="pd_table_items">26dp</dimen>
+    <dimen name="icon_appbar">22dp</dimen>
+    <dimen name="m16">16dp</dimen>
+    <dimen name="f16">16sp</dimen>
+    <dimen name="m42">42dp</dimen>
+    <dimen name="f14">14sp</dimen>
+    <dimen name="s28">28dp</dimen>
+    <dimen name="f12">12sp</dimen>
+    <dimen name="r8">8dp</dimen>
+    <dimen name="m4">4dp</dimen>
+
+</resources>

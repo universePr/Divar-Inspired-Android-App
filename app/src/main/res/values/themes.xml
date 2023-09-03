@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DivarApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/p_light</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="android:fontFamily">@font/vazir</item>
+    </style>
+
+    <style name="navigationView">
+        <item name="android:background">@color/bottom_navigation_light</item>
+        <item name="itemIconTint">@color/p_light</item>
+    </style>
+
+    <style name="Layouts">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Texts">
+        <item name="android:textColor">@color/primarydark</item>
+    </style>
+    <style name="textInputEditText">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Texts.TextViews">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">@dimen/splash_text_size</item>
+        <item name="android:layout_margin">@dimen/margin_default</item>
+        <item name="android:padding">@dimen/padding_default</item>
+    </style>
+    <style name="Texts.textViews">
+        <item name="android:textSize">@dimen/small_font_size</item>
+        <item name="android:paddingTop">@dimen/padding_default</item>
+        <item name="android:paddingBottom">@dimen/padding_default</item>
+    </style>
+    <style name="EditText">
+        <item name="android:textColorHint">@color/p_dark</item>
+    </style>
+
+    <style name="ImageButtons">
+        <item name="android:tint">@color/p_dark</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="indicatorColor">@color/p_dark</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textSize">@dimen/splash_text_size</item>
+        <item name="android:backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="cardView">
+        <item name="android:textSize">@dimen/small_font_size</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="Theme.DivarApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.DivarApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DivarApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

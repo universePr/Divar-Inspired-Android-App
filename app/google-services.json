@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "110586338878",
+    "project_id": "chatapp-bb9f0",
+    "storage_bucket": "chatapp-bb9f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110586338878:android:3c9f876bbe8176a88d7b6f",
+        "android_client_info": {
+          "package_name": "com.applications.divarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110586338878-bq8p7hlt8ltirt12kf6i7n3cvcpfle9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi506AfM7R8BhneyVpv_wk9U69HC5FdmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110586338878-bq8p7hlt8ltirt12kf6i7n3cvcpfle9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

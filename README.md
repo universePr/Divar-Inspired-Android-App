@@ -1,0 +1,2 @@
+# DivarApp
+Android java project
