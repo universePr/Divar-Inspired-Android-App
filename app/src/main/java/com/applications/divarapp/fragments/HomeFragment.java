@@ -86,16 +86,21 @@ public class HomeFragment extends Fragment {
             @Override
             public void onResponse(Call<ArrayList<CategoryModel>> call, Response<ArrayList<CategoryModel>> response) {
                 if(response.body() != null) {
-                    binding.categoriesList.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, true));
-                    adapterCat = new CategoryListAdapter(response.body(), getContext(), item -> {
-                        Intent i = new Intent(getActivity(), ChoseCategoryActivity.class);
-                        i.putExtra("cid", item.getId());
-                        i.putExtra("cname", item.getName());
-                        i.putExtra("cicon", item.getIconUrl());
-                        i.putExtra("subs", item.getSubs());
-                        getContext().startActivity(i);
-                    });
-                    binding.categoriesList.setAdapter(adapterCat);
+                    try {
+                        binding.categoriesList.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, true));
+
+                        adapterCat = new CategoryListAdapter(response.body(), getContext(), item -> {
+                            Intent i = new Intent(getActivity(), ChoseCategoryActivity.class);
+                            i.putExtra("cid", item.getId());
+                            i.putExtra("cname", item.getName());
+                            i.putExtra("cicon", item.getIconUrl());
+                            i.putExtra("subs", item.getSubs());
+                            getContext().startActivity(i);
+                        });
+                        binding.categoriesList.setAdapter(adapterCat);
+                    }catch (Exception e){
+
+                    }
                 }
             }
 
@@ -145,14 +150,17 @@ public class HomeFragment extends Fragment {
             @Override
             public void onResponse(Call<ArrayList<AdsModel>> call, Response<ArrayList<AdsModel>> response) {
                 if(response.body() != null){
+                        try {
+                            binding.adsList.setLayoutManager(new LinearLayoutManager(getContext()));
+                            adapterAd = new AdListAdapter(response.body(), getContext(), item -> {
+                                Intent i = new Intent(getActivity(), AdShowActivity.class);
+                                i.putExtra(Constants.Key_Extra_AId, item);
+                                startActivity(i);
+                            });
+                            binding.adsList.setAdapter(adapterAd);
+                        }catch (Exception e){
 
-                    binding.adsList.setLayoutManager(new LinearLayoutManager(getContext()));
-                    adapterAd = new AdListAdapter(response.body(),getContext(),item -> {
-                        Intent i = new Intent(getActivity(), AdShowActivity.class);
-                        i.putExtra(Constants.Key_Extra_AId, item);
-                        startActivity(i);
-                    });
-                    binding.adsList.setAdapter(adapterAd);
+                        }
                 }else{
                     try {
                         Snackbar.make(binding.content, getString(R.string.communication_problem_has_occurred), Snackbar.LENGTH_INDEFINITE).setAction(getString(R.string.try_again), v -> GetNewAds()).show();

@@ -162,4 +162,19 @@
     <string name="spanish">Spanish</string>
     <string name="translation_failed">Translation failed.</string>
 
+    <string name="unspecified_category">Unspecified category</string>
+    <string name="vehicles">Vehicles</string>
+    <string name="digital_products">Digital products</string>
+    <string name="home_and_kitchen">Home and kitchen</string>
+    <string name="services">Services</string>
+    <string name="personal_items">Personal items</string>
+    <string name="entertainment_and_leisure">Entertainment and leisure</string>
+    <string name="social">Social</string>
+    <string name="industrial_equipment">Industrial equipment</string>
+    <string name="reg_select">Select the province and city where your ad is located, and if it is not listed, select the closest one.</string>
+    <string name="city">City</string>
+    <string name="range">Select the ad range on the map</string>
+    <string name="msg_map">By choosing the range, your ad will be displayed with a map</string>
+    <string name="add_range">Add a range on the map</string>
+
 </resources>

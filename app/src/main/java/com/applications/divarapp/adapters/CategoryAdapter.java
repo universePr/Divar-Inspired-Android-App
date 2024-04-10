@@ -46,11 +46,38 @@ public class CategoryAdapter extends ArrayAdapter<CategoryModel> {
         }
 
         CategoryModel p = getItem(position);
-
         if (p != null) {
             TextView tt1 = (TextView) v.findViewById(R.id.category_name);
             if (tt1 != null) {
-                tt1.setText(p.getName());
+                switch (p.getId()) {
+                    case 1:
+                        tt1.setText(mContext.getString(R.string.unspecified_category));
+                    break;
+                    case 2:
+                        tt1.setText(mContext.getString(R.string.vehicles));
+                        break;
+                    case 3:
+                        tt1.setText(mContext.getString(R.string.digital_products));
+                        break;
+                    case 5:
+                        tt1.setText(mContext.getString(R.string.home_and_kitchen));
+                        break;
+                    case 6:
+                        tt1.setText(mContext.getString(R.string.services));
+                        break;
+                    case 7:
+                        tt1.setText(mContext.getString(R.string.personal_items));
+                        break;
+                    case 8:
+                        tt1.setText(mContext.getString(R.string.entertainment_and_leisure));
+                        break;
+                    case 9:
+                        tt1.setText(mContext.getString(R.string.social));
+                        break;
+                    case 10:
+                        tt1.setText(mContext.getString(R.string.industrial_equipment));
+                        break;
+                }
             }
             ImageView imageView = (ImageView) v.findViewById(R.id.img_category_icon);
             if (imageView != null && !p.getIconUrl().isEmpty()) {

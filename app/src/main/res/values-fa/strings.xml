@@ -131,7 +131,7 @@
     <string name="share_ad_coming_soon">اشتراک‌گذاری آگهی به زودی</string>
     <string name="all_ads"> همه آگهی های</string>
     <string name="expired">منقضی شده</string>
-    <string name="in">in</string>
+    <string name="in">در</string>
     <string name="the_ad_was_marked">آگهی نشان شد</string>
     <string name="the_ad_was_removed">نشان آگهی حذف شد</string>
     <string name="ad_not_shown_check_your_internet">آگهی نشان نشد، اینترنت خود را بررسی کنید.</string>
@@ -159,5 +159,19 @@
     <string name="language">فارسی</string>
     <string name="one_the_display_number_chat_ads_must_be_active">یکی از موارد نمایش شماره و یا چت آگهی باید فعال باشد.</string>
     <string name="spanish">اسپانیایی</string>
-    <string name="translation_failed">Translation failed.</string>
+    <string name="translation_failed">ترجمه ناموفق بود.</string>
+    <string name="unspecified_category">دسته بندی نامشخص</string>
+    <string name="vehicles">وسايل نقليه</string>
+    <string name="digital_products">محصولات دیجیتال</string>
+    <string name="home_and_kitchen">خانه و آشپزخانه</string>
+    <string name="services">خدمات</string>
+    <string name="personal_items">وسایل شخصی</string>
+    <string name="entertainment_and_leisure">سرگرمی و اوقات فراغت</string>
+    <string name="social">اجتماعی</string>
+    <string name="industrial_equipment">تجهیزات صنعتی</string>
+    <string name="reg_select">استان و شهری که آگهی شما در آن قرار دارد را انتخاب کنید، و اگر در لیست نیست، نزدیکترین مورد را انتخاب کنید.</string>
+    <string name="city">شهر</string>
+    <string name="range">محدوده تبلیغات را روی نقشه انتخاب کنید</string>
+    <string name="msg_map">با انتخاب محدوده، تبلیغ شما همراه با نقشه نمایش داده می شود</string>
+    <string name="add_range">یک محدوده روی نقشه اضافه کنید</string>
 </resources>

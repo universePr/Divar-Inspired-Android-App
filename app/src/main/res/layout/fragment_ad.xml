@@ -916,16 +916,16 @@
                         android:layout_height="wrap_content"
                         android:text="@string/header_global_specification"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
                         android:layout_margin="@dimen/margin_default"
                         style="@style/Texts.TextViews"/>
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/location_decs"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="استان و شهر محل آگهی خود را انتخاب کنید و اگر در فهرست وجود ندارد، نزدیکترین را انتخاب کنید."
+                        android:text="@string/reg_select"
                         app:layout_constraintTop_toBottomOf="@+id/location_title2"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
                         android:layout_margin="@dimen/margin_default"
                         style="@style/Texts.textViews"/>
 
@@ -943,8 +943,8 @@
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="شهر"
-                            app:layout_constraintEnd_toEndOf="parent"
+                            android:text="@string/city"
+                            app:layout_constraintStart_toStartOf="parent"
                             style="@style/Texts.TextViews"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -982,8 +982,8 @@
                             android:id="@+id/map_title"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="انتخاب محدوده آگهی روی نقشه"
-                            app:layout_constraintEnd_toEndOf="parent"
+                            android:text="@string/range"
+                            app:layout_constraintStart_toStartOf="parent"
                             style="@style/Texts.TextViews"
                             app:layout_constraintTop_toTopOf="parent"
                             />
@@ -992,11 +992,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:layout_constraintTop_toBottomOf="@+id/map_title"
-                            android:text="با انتخاب محدوده، آگهی شما با نقشه نمایش داده میشود"
+                            android:text="@string/msg_map"
                             style="@style/Texts.textViews"
                             android:layout_margin="@dimen/margin_default"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"/>
+                            app:layout_constraintStart_toStartOf="parent"/>
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -1022,7 +1022,7 @@
                             android:background="@drawable/shape_image"
                             android:gravity="center"
                             android:padding="@dimen/padding_default"
-                            android:text="افزودن محدوده روی نقشه"
+                            android:text="@string/add_range"
                             android:textAlignment="center"
 
                             app:layout_constraintEnd_toEndOf="parent"
@@ -1033,7 +1033,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textAlignment="center"
-                            android:text="تایید"
+                            android:text="@string/confirm"
                             style="@style/Button"
                             android:layout_marginTop="@dimen/margin_default"
                             android:background="@drawable/shape"

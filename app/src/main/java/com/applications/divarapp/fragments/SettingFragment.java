@@ -119,7 +119,7 @@ public class SettingFragment extends Fragment {
                 @Override
                 public void run() {
 
-                    requireActivity().recreate();
+                    getActivity().recreate();
                     ((MainActivity)getActivity()).enableBottomBar(true);
                 }
             },1000);

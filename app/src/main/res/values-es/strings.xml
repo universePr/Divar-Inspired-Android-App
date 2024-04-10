@@ -160,4 +160,18 @@
     <string name="one_the_display_number_chat_ads_must_be_active">Uno de los anuncios de chat o número de visualización debe estar activo.</string>
     <string name="spanish">Español</string>
     <string name="translation_failed">Translation failed.</string>
+    <string name="unspecified_category">Categoría no especificada</string>
+    <string name="vehicles">Vehículos</string>
+    <string name="digital_products">Productos digitales</string>
+    <string name="home_and_kitchen">Hogar y cocina</string>
+    <string name="services">Servicios</string>
+    <string name="personal_items">Cosas personales</string>
+    <string name="entertainment_and_leisure">Entretenimiento y Ocio</string>
+    <string name="social">Social</string>
+    <string name="industrial_equipment">Equipo industrial</string>
+    <string name="reg_select">Selecciona la provincia y ciudad donde se encuentra tu anuncio, y si no aparece en la lista, selecciona la más cercana.</string>
+    <string name="city">Ciudad</string>
+    <string name="range">Seleccione el rango de anuncios en el mapa</string>
+    <string name="msg_map">Al elegir el rango, su anuncio se mostrará con un mapa</string>
+    <string name="add_range">Agregar un rango en el mapa</string>
 </resources>

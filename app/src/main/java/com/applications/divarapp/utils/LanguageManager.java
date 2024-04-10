@@ -3,6 +3,8 @@ package com.applications.divarapp.utils;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.os.Build;
+
 import java.util.Locale;
 
 public class LanguageManager {
@@ -16,10 +18,16 @@ public class LanguageManager {
     }
     public void updateResource(String code){
         Locale locale = new Locale(code);
+
         Locale.setDefault(locale);
         Resources resource = context.getResources();
         Configuration configuration = resource.getConfiguration();
-        configuration.locale = locale;
+        if (Build.VERSION.SDK_INT >= 17) {
+            configuration.setLocale(locale);
+        } else {
+            configuration.locale = locale;
+        }
+
         configuration.setLayoutDirection(locale);
         resource.updateConfiguration(configuration,resource.getDisplayMetrics());
         SPreferences.setDefaults("lang",code,context);

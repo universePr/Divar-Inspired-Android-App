@@ -95,7 +95,7 @@ public class MyAdFragment extends Fragment {
 
             @Override
             public void onFailure(Call<ArrayList<AdsModel>> call, Throwable t) {
-                Snackbar.make(binding.appbar, getString(R.string.communication_problem_has_occurred), Snackbar.LENGTH_INDEFINITE)
+                Snackbar.make(binding.container, getString(R.string.communication_problem_has_occurred), Snackbar.LENGTH_INDEFINITE)
                         .setAction(getString(R.string.try_again), v -> GetMyAdsFilter(SPreferences.getDefaults(Constants.Key_LoggedInUser_SP, getContext()), Constants.FilterByUser, "temp")).show();
 
             }

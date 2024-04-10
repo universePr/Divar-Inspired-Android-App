@@ -14,7 +14,7 @@ public class API {
     private static Retrofit retrofit;
     //private static String BASE_URL_API = "http://10.0.2.2:5087";
     //private static String BASE_URL_API = "http://172.16.1.2:5087";
-    private static final String BASE_URL_API = "http://temp.fsa-ltd.ir";
+    private static final String BASE_URL_API = "https://adsapi.mahicreativeteam.com";
     //private static final String BASE_URL_API = "http://...";
 
     public static Retrofit getRetrofitInstance() {

@@ -75,6 +75,7 @@ public class AdListAdapter extends RecyclerView.Adapter<AdListAdapter.ViewHolder
                     holder.ad_price.getText().toString(),
                     holder
             );
+            holder.translate_section.setVisibility(View.GONE);
         });
 
         if(ad.isContainImage()){
@@ -115,12 +116,16 @@ public class AdListAdapter extends RecyclerView.Adapter<AdListAdapter.ViewHolder
                                                     .addOnSuccessListener(runnable -> {
                                                         holder.ad_time.setText(runnable);
                                                     });
+                                            /*
                                             MainActivity.englishSpanishTranslator.translate(price)
                                                     .addOnSuccessListener(runnable -> {
                                                         holder.ad_price.setText(runnable);
                                                     });
 
-                                        }else if(lang.equals("fa")){
+                                             */
+
+                                        }
+                                        else if(lang.equals("fa")){
                                             holder.lang_progress.setVisibility(View.VISIBLE);
                                             MainActivity.englishPersianTranslator.translate(title)
                                                     .addOnSuccessListener(runnable -> {
@@ -131,11 +136,13 @@ public class AdListAdapter extends RecyclerView.Adapter<AdListAdapter.ViewHolder
                                                     .addOnSuccessListener(runnable -> {
                                                         holder.ad_time.setText(runnable);
                                                     });
+                                            /*
                                             MainActivity.englishPersianTranslator.translate(price)
                                                     .addOnSuccessListener(runnable -> {
                                                         holder.ad_price.setText(runnable);
                                                     });
 
+                                             */
                                         }
 
                                     }
@@ -150,12 +157,14 @@ public class AdListAdapter extends RecyclerView.Adapter<AdListAdapter.ViewHolder
                                                 .addOnSuccessListener(runnable -> {
                                                     holder.ad_time.setText(runnable);
                                                 });
+                                        /*
                                         MainActivity.spanishEnglishTranslator.translate(price)
                                                 .addOnSuccessListener(runnable -> {
                                                     holder.ad_price.setText(runnable);
                                                 });
 
 
+                                             */
                                     }else if(languageCode.equals("fa")){
                                         holder.lang_progress.setVisibility(View.VISIBLE);
                                         MainActivity.persianEnglishTranslator.translate(title)
@@ -167,11 +176,13 @@ public class AdListAdapter extends RecyclerView.Adapter<AdListAdapter.ViewHolder
                                                 .addOnSuccessListener(runnable -> {
                                                     holder.ad_time.setText(runnable);
                                                 });
+                                        /*
                                         MainActivity.persianEnglishTranslator.translate(price)
                                                 .addOnSuccessListener(runnable -> {
                                                     holder.ad_price.setText(runnable);
                                                 });
 
+                                             */
                                     }
 
                                 }

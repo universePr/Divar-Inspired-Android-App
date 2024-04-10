@@ -17,7 +17,11 @@ android {
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
 
+    lintOptions {
 
+        checkReleaseBuilds false
+
+    }
     buildTypes {
         release {
             minifyEnabled false
