@@ -19,7 +19,7 @@ This project is an Android application inspired by Divar.ir, the leading platfor
     * A Firebase project (Create one at firebase.google.com)
 2. **Clone the Repository:**
     ```bash
-    git clone git@github.com:universePr/Divar-InspiredAndroidApp.git
+    git clone git@github.com:universePr/DivarInspiredAndroidApp.git
     ```
 3. **Set Up Firebase:**
     * Follow the Firebase documentation to link your Firebase project with this app.
